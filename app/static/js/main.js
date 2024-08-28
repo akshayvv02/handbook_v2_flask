@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+document.body.style.zoom = "90%";
 (function() {
   "use strict";
 
