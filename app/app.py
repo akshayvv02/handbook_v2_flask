@@ -38,6 +38,10 @@ def home():
 def content():
     return render_template('content.html')
 
+@app.route('/emailauth')
+def content():
+    return render_template('emailauth.html')
+
 
 @app.route('/<role>_<wtd>')
 def dynamic_route(role, wtd):
