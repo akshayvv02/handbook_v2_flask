@@ -39,11 +39,11 @@ def content():
     return render_template('content.html')
 
 @app.route('/emailauth')
-def content():
+def emailauth_page():
     return render_template('emailauth.html')
 
 @app.route('/test')
-def content():
+def test_page():
     return render_template('test.html')
 
 @app.route('/<role>_<wtd>')
