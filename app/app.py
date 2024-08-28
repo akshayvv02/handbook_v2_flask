@@ -42,6 +42,9 @@ def content():
 def content():
     return render_template('emailauth.html')
 
+@app.route('/test')
+def content():
+    return render_template('test.html')
 
 @app.route('/<role>_<wtd>')
 def dynamic_route(role, wtd):
