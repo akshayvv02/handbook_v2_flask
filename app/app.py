@@ -52,6 +52,12 @@ def dynamic_route(role, wtd):
     template_name = f"{role}_{wtd}.html"
     return render_template(template_name)
 
+@app.route('/<topic>')
+def dynamic_route_topic(topic):
+    # Render a template corresponding to the topic
+    template_name = f"{topic}.html"
+    return render_template(template_name)
+
 @app.route('/login', methods=['POST'])
 def login():
     username = request.form['username']
