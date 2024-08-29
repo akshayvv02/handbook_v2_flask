@@ -6,6 +6,16 @@
 * License: https://bootstrapmade.com/license/
 */
 document.body.style.zoom = "90%";
+
+function topicalSearch(topic)
+{
+    // Construct the URL
+    var newUrl = "/" + topic
+
+    // Redirect to the new URL
+    window.location.href = newUrl;
+}
+
 (function() {
   "use strict";
 
