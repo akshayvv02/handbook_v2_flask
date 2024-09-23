@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <title>HandBook-CyberFlorida</title>
 </head>
-<body>
-    <h1>Login</h1>
-    <form action="/login" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <button type="submit">Login</button>
-    </form>
-    <p>{{ message }}</p>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 400px;">
+        <h1 style="text-align: center; color: #00703c;">Login</h1>
+        <form action="/login" method="post">
+            <label for="username" style="font-weight: bold; display: block; margin-bottom: 5px;">Username:</label>
+            <input type="text" id="username" name="username" required style="width: 100%; padding:10px  0px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="password" style="font-weight: bold; display: block; margin-bottom: 5px;">Password:</label>
+            <input type="password" id="password" name="password" required style="width: 100%; padding: 10px 0px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <button type="submit" style="width: 100%; background-color: #00703c; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Login</button>
+        </form>
+        <p style="text-align: center; color: #ff0000;">{{ message }}</p>
+    </div>
 </body>
 </html>
