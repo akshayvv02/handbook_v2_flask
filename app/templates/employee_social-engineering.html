@@ -385,11 +385,16 @@
     var role = document.getElementById("role").value;
     var wtd = document.getElementById("wtd").value;
     
-    // Construct the URL
-    var newUrl = "/" + role + "_" + wtd;
-    
-    // Redirect to the new URL
-    window.location.href = newUrl;
+    // Check if the user selected 'blank'
+    if (wtd == 'blank') {
+        alert("Please Select the Topic 'What to do If'");
+    } else {
+        // Construct the URL
+        var newUrl = "/" + role + "_" + wtd;
+        
+        // Redirect to the new URL
+        window.location.href = newUrl;
+    }
 }
   </script>
 
