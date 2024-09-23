@@ -51,10 +51,10 @@
         <li><a href="#hero" class="active" style="color: black;font-size: 15px;"><b><i class="bi bi-patch-question-fill"></i>&nbsp;&nbsp;&nbsp;What to do if</b></a></li>
         <select id="wtd" style="font-size: 16px; color: #333; background-color: white; border: 1px solid #ccc; border-radius: 4px; padding: 8px 12px; width: 230px; cursor: pointer; transition: border-color 0.3s ease;">
           <option value="blank" style="color: #888;">Select option</option>
-          <option value="phishing" selected>Phishing Attack</option>
+          <option value="phishing">Phishing Attack</option>
           <option value="ransomware">Ransomware Attack</option>
           <option value="apts">Advanced Persistent Threats</option>
-          <option value="sql-injection">SQL Injection</option>
+          <option value="sql-injection" selected>SQL Injection</option>
           <option value="malware">Malware Infections</option>
           <option value="social-engineering">Social Engineering</option>
           <option value="data-breach">Data Breaches</option>
@@ -63,8 +63,8 @@
         <li><a href="#hero" class="active" style="color: black;font-size: 15px;"><b><i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Your Role</b></a></li>
         <select id="role" style="font-size: 16px; color: #333; background-color: white; border: 1px solid #ccc; border-radius: 4px; padding: 8px 12px; width: 230px; cursor: pointer; transition: border-color 0.3s ease;">
           <option value="blank" style="color: #888;">Select a role</option>
-          <option value="executive">Executive</option>
-          <option value="manager" selected>Manager</option>
+          <option value="executive" selected>Executive</option>
+          <option value="manager">Manager</option>
           <option value="employee">Employee</option>
         </select>
         <br>
@@ -98,131 +98,133 @@
       <!-- Section Title -->
       <div class="container section-title" style="margin: 0; padding: 5px;">
         <ul class="portfolio-filters isotope-filters">
-          <li onclick="callHome()" data-filter="*" class="filter-active" style="padding: 12px;border-bottom:5px solid #006747;"><b>Home</b></li>
-          <li data-filter=".filter-app" style="padding: 12px;border-bottom:5px solid white;"><b>Settings</b></li>
-          <li onclick="topicalSearch('flstat')" data-filter=".filter-product" style="padding: 12px;border-bottom:5px solid white;"><b>FL Cybersecurity Laws</b></li>
-          <li onclick="location.href='#contact';" data-filter=".filter-branding" style="padding: 12px;border-bottom:5px solid white;"><b>Contact Us</b></li>
-        </ul><!-- End Portfolio Filters -->
+          <li onclick="callHome()" data-filter="*" class="filter-active" style="padding: 12px; border-bottom:5px solid #006747;"><b>Home</b></li>
+          <li data-filter=".filter-app" style="padding: 12px; border-bottom:5px solid white;"><b>Settings</b></li>
+          <li onclick="topicalSearch('flstat')" data-filter=".filter-product" style="padding: 12px; border-bottom:5px solid white;"><b>FL Cybersecurity Laws</b></li>
+          <li onclick="location.href='#contact';" data-filter=".filter-branding" style="padding: 12px; border-bottom:5px solid white;"><b>Contact Us</b></li>
+        </ul>
         <hr>
       </div>
       <br>
       
       <div class="container section-title">
-        <h2>People Managers: Phishing Attack Response</h2>
-
+        <h2>Executive Team: SQL Injection Attack Response</h2>
+      
         <section id="resume" class="resume section">
           <!-- Section Title -->
           <div class="container section-title">
-            <p>In the event of a successful phishing attack, people managers should take the following steps to manage the situation effectively:</p>
+            <p>In the event of a SQL Injection attack, the response steps should be clearly defined for each role to ensure a swift and effective reaction.</p>
           </div>
       
-      <section id="resume" class="resume section">
-        <!-- Section Title -->
-        <br>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
+          <section id="resume" class="resume section">
+            <!-- Section Title -->
+            <br>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
       
-              <div class="resume-item">
-                <div class="row">
-                  <div class="col-lg-1">
-                    <h1 style="font-size: 3em;"><i class="bi bi-info-circle"></i></h1>
-                  </div>
-                  <div class="col-lg-11" style="padding-left: 0px;">
-                    <h4 style="color: black; text-transform: capitalize;">Report to IT and Upper Management</h4>
-                    <p>Immediately inform the IT department and your direct superior about the incident.</p>
-                  </div>
+                  <div class="resume-item">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <h1 style="font-size: 3em;"><i class="bi bi-graph-up"></i></h1>
+                      </div>
+                      <div class="col-lg-11" style="padding-left: 0px;">
+                        <h4 style="color: black; text-transform: capitalize;">Assess the Impact</h4>
+                        <p>Evaluate the extent of the attack and what data was accessed or compromised.</p>
+                      </div>
+                    </div>
+                    <br>
+                  </div><!-- End Resume Item -->
+      
+                  <div class="resume-item">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <h1 style="font-size: 3em;"><i class="bi bi-lightning"></i></h1>
+                      </div>
+                      <div class="col-lg-11" style="padding-left: 0px;">
+                        <h4 style="color: black; text-transform: capitalize;">Activate Incident Response Plan</h4>
+                        <p>Ensure the incident response team is fully engaged and leading the mitigation efforts.</p>
+                      </div>
+                    </div>
+                    <br>
+                  </div><!-- End Resume Item -->
+      
+                  <div class="resume-item">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <h1 style="font-size: 3em;"><i class="bi bi-shield-check"></i></h1>
+                      </div>
+                      <div class="col-lg-11" style="padding-left: 0px;">
+                        <h4 style="color: black; text-transform: capitalize;">Engage Database Administrators and Developers</h4>
+                        <p>Work with DBAs and developers to identify and patch vulnerabilities.</p>
+                      </div>
+                    </div>
+                    <br>
+                  </div><!-- End Resume Item -->
+      
+                  <div class="resume-item">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <h1 style="font-size: 3em;"><i class="bi bi-chat-dots"></i></h1>
+                      </div>
+                      <div class="col-lg-11" style="padding-left: 0px;">
+                        <h4 style="color: black; text-transform: capitalize;">Internal Communication</h4>
+                        <p>Inform key stakeholders, including board members and department heads, about the attack and the steps being taken.</p>
+                      </div>
+                    </div>
+                    <br>
+                  </div><!-- End Resume Item -->
+      
+                  <div class="resume-item">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <h1 style="font-size: 3em;"><i class="bi bi-megaphone"></i></h1>
+                      </div>
+                      <div class="col-lg-11" style="padding-left: 0px;">
+                        <h4 style="color: black; text-transform: capitalize;">External Communication</h4>
+                        <p>Prepare a public statement if necessary to address the attack, ensuring transparency and maintaining public trust.</p>
+                      </div>
+                    </div>
+                    <br>
+                  </div><!-- End Resume Item -->
+      
+                  <div class="resume-item">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <h1 style="font-size: 3em;"><i class="bi bi-shield"></i></h1>
+                      </div>
+                      <div class="col-lg-11" style="padding-left: 0px;">
+                        <h4 style="color: black; text-transform: capitalize;">Review and Improve Security Measures</h4>
+                        <p>Conduct a post-incident analysis to identify weaknesses and implement stronger security measures to prevent future attacks.</p>
+                      </div>
+                    </div>
+                    <br>
+                  </div><!-- End Resume Item -->
+      
+                  <div class="resume-item">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <h1 style="font-size: 3em;"><i class="bi bi-person-check"></i></h1>
+                      </div>
+                      <div class="col-lg-11" style="padding-left: 0px;">
+                        <h4 style="color: black; text-transform: capitalize;">Support for Affected Parties</h4>
+                        <p>Provide support and guidance to employees affected by the attack.</p>
+                      </div>
+                    </div>
+                    <br>
+                  </div><!-- End Resume Item -->
+      
                 </div>
-                <br>
-              </div><!-- End Resume Item -->
+              </div>
+            </div>
+          </section><!-- /Resume Section -->
       
-              <div class="resume-item">
-                <div class="row">
-                  <div class="col-lg-1">
-                    <h1 style="font-size: 3em;"><i class="bi bi-shield-exclamation"></i></h1>
-                  </div>
-                  <div class="col-lg-11" style="padding-left: 0px;">
-                    <h4 style="color: black; text-transform: capitalize;">Contain the Breach</h4>
-                    <p>Work with the IT department to isolate compromised systems to prevent further damage.</p>
-                  </div>
-                </div>
-                <br>
-              </div><!-- End Resume Item -->
-      
-              <div class="resume-item">
-                <div class="row">
-                  <div class="col-lg-1">
-                    <h1 style="font-size: 3em;"><i class="bi bi-person-check"></i></h1>
-                  </div>
-                  <div class="col-lg-11" style="padding-left: 0px;">
-                    <h4 style="color: black; text-transform: capitalize;">Identify and Assist Affected Team Members</h4>
-                    <p>Determine which team members were affected and provide them with specific instructions to secure their accounts.</p>
-                  </div>
-                </div>
-                <br>
-              </div><!-- End Resume Item -->
-      
-              <div class="resume-item">
-                <div class="row">
-                  <div class="col-lg-1">
-                    <h1 style="font-size: 3em;"><i class="bi bi-megaphone"></i></h1>
-                  </div>
-                  <div class="col-lg-11" style="padding-left: 0px;">
-                    <h4 style="color: black; text-transform: capitalize;">Communicate with Your Team</h4>
-                    <p>Clearly communicate the situation to your team and provide guidance on next steps.</p>
-                  </div>
-                </div>
-                <br>
-              </div><!-- End Resume Item -->
-      
-              <div class="resume-item">
-                <div class="row">
-                  <div class="col-lg-1">
-                    <h1 style="font-size: 3em;"><i class="bi bi-search"></i></h1>
-                  </div>
-                  <div class="col-lg-11" style="padding-left: 0px;">
-                    <h4 style="color: black; text-transform: capitalize;">Facilitate Forensic Analysis</h4>
-                    <p>Assist the IT and security teams with collecting information and evidence for forensic analysis.</p>
-                  </div>
-                </div>
-                <br>
-              </div><!-- End Resume Item -->
-      
-              <div class="resume-item">
-                <div class="row">
-                  <div class="col-lg-1">
-                    <h1 style="font-size: 3em;"><i class="bi bi-shield-shaded"></i></h1>
-                  </div>
-                  <div class="col-lg-11" style="padding-left: 0px;">
-                    <h4 style="color: black; text-transform: capitalize;">Reinforce Security Protocols</h4>
-                    <p>Conduct an immediate refresher training session to reinforce cybersecurity best practices and prevent future incidents.</p>
-                  </div>
-                </div>
-                <br>
-              </div><!-- End Resume Item -->
-      
-              <div class="resume-item">
-                <div class="row">
-                  <div class="col-lg-1">
-                    <h1 style="font-size: 3em;"><i class="bi bi-eye"></i></h1>
-                  </div>
-                  <div class="col-lg-11" style="padding-left: 0px;">
-                    <h4 style="color: black; text-transform: capitalize;">Monitor for Further Threats</h4>
-                    <p>Keep an eye on team activities and communications for signs of additional phishing attempts or other suspicious behavior.</p>
-                  </div>
-                </div>
-                <br>
-              </div><!-- End Resume Item -->
-      
-            </div> 
-          </div>
         </div>
-      </section><!-- /Resume Section -->
       
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
+      </section><!-- /Portfolio Section -->
+      
+      
+      
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">

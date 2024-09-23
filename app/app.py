@@ -27,7 +27,7 @@ def get_mysql_connection():
 def home():
     connection = get_mysql_connection()
     if connection:
-        connection_status = "Connected to MySQL"
+        connection_status = "Remote Server Connected!"
         connection.close()
     else:
         connection_status = "Error connecting to MySQL"

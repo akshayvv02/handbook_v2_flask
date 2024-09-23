@@ -51,7 +51,7 @@
         <li><a href="#hero" class="active" style="color: black;font-size: 15px;"><b><i class="bi bi-patch-question-fill"></i>&nbsp;&nbsp;&nbsp;What to do if</b></a></li>
         <select id="wtd" style="font-size: 16px; color: #333; background-color: white; border: 1px solid #ccc; border-radius: 4px; padding: 8px 12px; width: 230px; cursor: pointer; transition: border-color 0.3s ease;">
           <option value="blank" style="color: #888;">Select option</option>
-          <option value="phishing">Phishing Attack</option>
+          <option value="phishing" selected>Phishing Attack</option>
           <option value="ransomware">Ransomware Attack</option>
           <option value="apts">Advanced Persistent Threats</option>
           <option value="sql-injection">SQL Injection</option>
@@ -63,7 +63,7 @@
         <li><a href="#hero" class="active" style="color: black;font-size: 15px;"><b><i class="bi bi-person-circle"></i>&nbsp;&nbsp;&nbsp;Your Role</b></a></li>
         <select id="role" style="font-size: 16px; color: #333; background-color: white; border: 1px solid #ccc; border-radius: 4px; padding: 8px 12px; width: 230px; cursor: pointer; transition: border-color 0.3s ease;">
           <option value="blank" style="color: #888;">Select a role</option>
-          <option value="executive">Executive</option>
+          <option value="executive" selected>Executive</option>
           <option value="manager">Manager</option>
           <option value="employee">Employee</option>
         </select>
@@ -73,15 +73,16 @@
     </nav>
     <div style="position: absolute; bottom: 0; padding-bottom: 20px;">
       <h5><b>Topical Search</b></h5>
-      <ul style="list-style-type: none; padding: 5px;">
-        <li><a onclick="topicalSearch('emailauth')" href="#" id="mfa"><i class="bi bi-envelope-arrow-up"></i>&nbsp;&nbsp;Email Authentication</a></li>
+         <ul style="list-style-type: none;padding: 5px;">
+      <li><a onclick="topicalSearch('emailauth')" href="#" id="mfa"><i class="bi bi-envelope-arrow-up"></i>&nbsp;&nbsp;Email Authentication</a></li>
       <li><a onclick="topicalSearch('cloudsec')" href="#" id="mfa"><i class="bi bi-cloud-arrow-down-fill"></i>&nbsp;&nbsp;Cloud Security Best Practices</a></li>
       <li><a onclick="topicalSearch('networksec')" href="#" id="mfa"><i class="bi bi-reception-4"></i>&nbsp;&nbsp;Network Security Protocols</a></li>
-      <li><a onclick="topicalSearch('mds')" href="#" id="mds"><i class="bi bi-phone"></i>&nbsp;&nbsp;Mobile Device Security</a></li>
-      <li><a onclick="topicalSearch('mds')" href="#" id="sbp"><i class="bi bi-browser-chrome"></i>&nbsp;&nbsp;Secure Browsing Practices</a></li>
-      <li><a onclick="topicalSearch('mds')" href="#" id="set"><i class="bi bi-signal"></i>&nbsp;&nbsp;Social Engineering Threats</a></li>
-      <li><a onclick="topicalSearch('mds')" href="#" id="mfa"><i class="bi bi-fingerprint"></i>&nbsp;&nbsp;Multi-Factor Authentication</a></li>
-      </ul>
+      <li><a onclick="topicalSearch('mobiledevicesecurity')" href="#" id="mds"><i class="bi bi-phone"></i>&nbsp;&nbsp;Mobile Device Security</a></li>
+      <li><a onclick="topicalSearch('securebrowsing')" href="#" id="sbp"><i class="bi bi-browser-chrome"></i>&nbsp;&nbsp;Secure Browsing Practices</a></li>
+      <li><a onclick="topicalSearch('socialengineering')" href="#" id="set"><i class="bi bi-signal"></i>&nbsp;&nbsp;Social Engineering Threats</a></li>
+      <li><a onclick="topicalSearch('mfa')" href="#" id="mfa"><i class="bi bi-fingerprint"></i>&nbsp;&nbsp;Multi-Factor Authentication</a></li>
+      
+    </ul>
     </div>
   </header>
 
@@ -97,7 +98,7 @@
       <!-- Section Title -->
       <div class="container section-title" style="margin: 0; padding: 5px;">
         <ul class="portfolio-filters isotope-filters">
-          <li onclick="location.href='#header';" data-filter="*" class="filter-active" style="padding: 12px;border-bottom:5px solid #006747;"><b>Home</b></li>
+          <li onclick="callHome()" data-filter="*" class="filter-active" style="padding: 12px;border-bottom:5px solid #006747;"><b>Home</b></li>
           <li data-filter=".filter-app" style="padding: 12px;border-bottom:5px solid white;"><b>Settings</b></li>
           <li onclick="topicalSearch('flstat')" data-filter=".filter-product" style="padding: 12px;border-bottom:5px solid white;"><b>FL Cybersecurity Laws</b></li>
           <li onclick="location.href='#contact';" data-filter=".filter-branding" style="padding: 12px;border-bottom:5px solid white;"><b>Contact Us</b></li>
@@ -309,16 +310,21 @@
     }
 
     function redirectToPage() {
-      // Get the selected values from the dropdowns
-      var role = document.getElementById("role").value;
-      var wtd = document.getElementById("wtd").value;
-
-      // Construct the URL
-      var newUrl = "/" + role + "_" + wtd;
-
-      // Redirect to the new URL
-      window.location.href = newUrl;
+    // Get the selected values from the dropdowns
+    var role = document.getElementById("role").value;
+    var wtd = document.getElementById("wtd").value;
+    
+    // Check if the user selected 'blank'
+    if (wtd == 'blank') {
+        alert("Please Select the Topic 'What to do If'");
+    } else {
+        // Construct the URL
+        var newUrl = "/" + role + "_" + wtd;
+        
+        // Redirect to the new URL
+        window.location.href = newUrl;
     }
+}
   </script>
 </body>
 

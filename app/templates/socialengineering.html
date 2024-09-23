@@ -11,7 +11,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -94,151 +94,138 @@
 
       <div class="container section-title" style="margin: 0; padding: 5px;">
         <ul class="portfolio-filters isotope-filters">
-          <li onclick="callHome()" data-filter="*" class="filter-active" style="padding: 12px;border-bottom:5px solid #006747;"><b>Home</b></li>
-          <li data-filter=".filter-app" style="padding: 12px;border-bottom:5px solid white;"><b>Settings</b></li>
-          <li onclick="topicalSearch('flstat')" data-filter=".filter-product" style="padding: 12px;border-bottom:5px solid white;"><b>FL Cybersecurity Laws</b></li>
-          <li onclick="location.href='#contact';" data-filter=".filter-branding" style="padding: 12px;border-bottom:5px solid white;"><b>Contact Us</b></li>
-        </ul><!-- End Portfolio Filters -->
+          <li onclick="callHome()" data-filter="*" class="filter-active" style="padding: 12px; border-bottom:5px solid #006747;"><b>Home</b></li>
+          <li data-filter=".filter-app" style="padding: 12px; border-bottom:5px solid white;"><b>Settings</b></li>
+          <li onclick="topicalSearch('flstat')" data-filter=".filter-product" style="padding: 12px; border-bottom:5px solid white;"><b>FL Cybersecurity Laws</b></li>
+          <li onclick="location.href='#contact';" data-filter=".filter-branding" style="padding: 12px; border-bottom:5px solid white;"><b>Contact Us</b></li>
+        </ul>
         <hr>
       </div>
 
       <br>
       <div class="container section-title">
-        <h2>NETWORK SECURITY PROTOCOLS</h2>
-        <p>Securing your network infrastructure is essential for protecting data and ensuring the integrity of communications. Network security protocols are critical in establishing secure and reliable communication channels across your network. These protocols define the rules for data exchange, ensuring that information is transmitted securely and only to intended recipients.</p>
+        <h2>Social Engineering Threats</h2>
+        <p>Social engineering is a sophisticated and insidious form of cyberattack that exploits human psychology rather than technical vulnerabilities. Unlike traditional hacking methods, social engineering relies on tricking individuals into divulging sensitive information or performing actions that compromise security. These attacks are often subtle, making them difficult to detect and prevent. Understanding the various forms of social engineering and how to defend against them is crucial for maintaining both personal and organizational security.</p>
         <hr>
-        
-        <section id="skills" class="skills section light-background">
-          <div class="container section-title">
-            <h6 style="text-align: center;font-weight: bold;"><i>"Network security protocols play a pivotal role in safeguarding communications and data across your infrastructure."</i></h6>
-          </div>
-        </section>
+      </div>
       
+      <section id="skills" class="skills section light-background">
+        <div class="container section-title">
+          <h6 style="text-align: center;font-weight: bold;"><i>"Social engineering is not about breaking systems—it's about breaking people."</i></h6>
+        </div>
+      </section>
+      
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3>COMMON SOCIAL ENGINEERING TACTICS</h3>
+            <p>Social engineering attacks take many forms, each designed to exploit human trust and emotions. From phishing to baiting, understanding these tactics is essential for building a strong defense against them.</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="https://cheapsslsecurity.com/blog/wp-content/uploads/2022/05/social-engineering-attacks-1.jpg" alt="Social Engineering Threats" class="img-fluid" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      <section id="resume" class="resume section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="resume-item">
+                <div class="row">
+                  <div class="col-lg-12" style="padding-left: 10px;">
+                    <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-envelope-exclamation"></i>&nbsp;&nbsp;Phishing</h4>
+                    <p>Phishing remains one of the most prevalent social engineering tactics. It typically involves sending fraudulent emails that appear to come from legitimate sources, such as banks, social media platforms, or colleagues. These emails often contain urgent messages designed to provoke an emotional response, such as a warning that your account has been compromised or that a payment is overdue. The goal is to trick the recipient into clicking on a malicious link or providing sensitive information, such as login credentials or credit card numbers.</p>
+                  </div>
+                </div>
+                <br>
+              </div>
+      
+              <div class="resume-item">
+                <div class="row">
+                  <div class="col-lg-12" style="padding-left: 10px;">
+                    <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-person-check"></i>&nbsp;&nbsp;Spear Phishing</h4>
+                    <p>Spear phishing is a more targeted form of phishing, where the attacker customizes the message to a specific individual or organization. By researching their target, the attacker can create a highly convincing email that appears to be from a trusted source. For example, a spear phishing email might appear to come from a CEO to a finance employee, instructing them to transfer funds to a certain account. Due to its personalized nature, spear phishing is particularly effective and dangerous.</p>
+                  </div>
+                </div>
+                <br>
+              </div>
+      
+              <div class="resume-item">
+                <div class="row">
+                  <div class="col-lg-12" style="padding-left: 10px;">
+                    <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-chat-square-text"></i>&nbsp;&nbsp;Pretexting</h4>
+                    <p>Pretexting is another form of social engineering where an attacker fabricates a scenario to gain the victim's trust and obtain information. For example, an attacker might pose as a bank employee and ask for personal details to "verify your identity." The key to pretexting is the creation of a plausible story that convinces the victim to comply with the request. Defending against pretexting involves being cautious about sharing personal information and verifying the identity of anyone requesting sensitive data.</p>
+                  </div>
+                </div>
+                <br>
+              </div>
+      
+              <div class="resume-item">
+                <div class="row">
+                  <div class="col-lg-12" style="padding-left: 10px;">
+                    <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-usb"></i>&nbsp;&nbsp;Baiting</h4>
+                    <p>Baiting is another social engineering tactic that exploits curiosity or greed. Attackers might leave infected USB drives labeled "Confidential" in public places, hoping someone will pick them up and plug them into their computer. Once connected, the USB drive installs malware that can steal data or give the attacker remote access to the victim's system. To avoid falling victim to baiting, never use unknown USB drives or other external devices.</p>
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <br>
+      <div class="d-flex justify-content-center">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/v7VTJhkJUUY" title="Social Engineering Threats" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <br>
+      <br>
+      
+      <section id="resume" class="resume section">
+        <div class="container section-title">
+          <h3 style="">DEFENDING AGAINST SOCIAL ENGINEERING</h3>
+          <p>Awareness and education are key to defending against social engineering. By understanding these tactics and remaining vigilant, individuals and organizations can protect themselves from manipulative attacks.</p>
+        </div>
         <br>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8">
-              <h3>ESSENTIAL SECURITY PROTOCOLS</h3>
-              <p>Implementing the right network security protocols is key to defending against cyber threats. These protocols form the backbone of a robust security framework, ensuring that all data transmitted across your network is protected from unauthorized access and potential breaches. By integrating these essential protocols into your security strategy, you not only safeguard sensitive information but also enhance the overall reliability and performance of your network.</p>
+            <div class="col-lg-6">
+              <section id="skills" class="skills section light-background">
+                <div class="container section-title">
+                  <h6 style="font-weight: bold;"><i class="bi bi-journal-check"></i>&nbsp;&nbsp;1. Regular Employee Training</h6>
+                  <p>Organizations should regularly train employees on the latest social engineering tactics and encourage a culture of skepticism when dealing with unsolicited requests for information or actions. Continuous education helps employees recognize and avoid falling victim to these attacks.</p>
+                </div>
+              </section>
             </div>
-            <div class="col-lg-4">
-              <img src="https://pentestwizard.com/wp-content/uploads/2024/04/Untitled-6-300x300.png" alt="Network Security" class="img-fluid" style="max-width: 100%;">
+            <div class="col-lg-6">
+              <section id="skills" class="skills section light-background">
+                <div class="container section-title">
+                  <h6 style="font-weight: bold;"><i class="bi bi-shield-lock"></i>&nbsp;&nbsp;2. Verify Identities</h6>
+                  <p>Always verify the identity of anyone requesting sensitive information or actions, especially if the request is unexpected. This can involve directly contacting the person or organization supposedly making the request to confirm its legitimacy.</p>
+                </div>
+              </section>
             </div>
           </div>
         </div>
       
-        <br>
-        <section id="resume" class="resume section">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="resume-item">
-                  <div class="row">
-                    <div class="col-lg-12" style="padding-left: 10px;">
-                      <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-shield-lock"></i>&nbsp;&nbsp;Transport Layer Security (TLS)</h4>
-                      <p>TLS is a cryptographic protocol designed to provide secure communication over a computer network. It encrypts the data transmitted between clients and servers, protecting it from eavesdropping and tampering. Ensure that all sensitive communications, especially over the web, use TLS.</p>
-                    </div>
-                  </div>
-                  <br>
-                </div>
-      
-                <div class="resume-item">
-                  <div class="row">
-                    <div class="col-lg-12" style="padding-left: 10px;">
-                      <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-shield-shaded"></i>&nbsp;&nbsp;IPsec (Internet Protocol Security)</h4>
-                      <p>IPsec is a suite of protocols that encrypts and authenticates IP packets to secure communication between two points. It can be used to secure VPNs, ensuring that data transmitted over the public internet remains confidential. IPsec is often implemented at the network layer, providing protection for all data traveling across the IP network.</p>
-                    </div>
-                  </div>
-                  <br>
-                </div>
-      
-                <div class="resume-item">
-                  <div class="row">
-                    <div class="col-lg-12" style="padding-left: 10px;">
-                      <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-terminal"></i>&nbsp;&nbsp;Secure Shell (SSH)</h4>
-                      <p>SSH is a protocol for secure remote login and other secure network services over an unsecured network. It provides a secure channel over an unsecured network by encrypting the session data. SSH is widely used for managing servers, transferring files, and tunneling other protocols securely.</p>
-                    </div>
-                  </div>
-                  <br>
-                </div>
-      
-                <div class="resume-item">
-                  <div class="row">
-                    <div class="col-lg-12" style="padding-left: 10px;">
-                      <h4 style="color: black;text-transform: capitalize;font-weight: bold;"><i class="bi bi-globe"></i>&nbsp;&nbsp;Hypertext Transfer Protocol Secure (HTTPS)</h4>
-                      <p>HTTPS is an extension of HTTP that uses TLS to encrypt data between a web server and a client. It ensures the confidentiality and integrity of the data exchanged, protecting it from man-in-the-middle attacks. All web applications that handle sensitive data should enforce HTTPS to secure communications.</p>
-                    </div>
-                  </div>
-                  <br>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      
-        <br>
-        <div class="d-flex justify-content-center">
-          <iframe width="400" height="250" src="https://www.youtube.com/embed/E5bSumTAHZE" title="Network Security Protocols Explained" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <br>
-        <br>
-      
-        <section id="resume" class="resume section">
+        <section id="services" class="services section light-background" style="margin: 25px 10px 25px 10px;">
           <div class="container section-title">
-            <h3 style="">HOW TO RESPOND TO NETWORK SECURITY BREACHES</h3>
-            <p>If a security breach occurs, swift and decisive action is necessary to protect your network and minimize damage. The following steps outline the best practices for responding to network security breaches:</p>
+            <h6 style="font-weight: bold;"><i class="bi bi-shield-exclamation"></i>&nbsp;&nbsp;3. Implement Security Policies</h6>
+            <p>Establish and enforce security policies that limit the sharing of sensitive information. Ensure that these policies are communicated clearly to all employees, and regularly review and update them to address new threats.</p>
           </div>
-          <br>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <section id="skills" class="skills section light-background">
-                  <div class="container section-title">
-                    <h6 style="font-weight: bold;"><i class="bi bi-search"></i>&nbsp;&nbsp;1. Detect and Identify the Breach</h6>
-                    <p>Deploy your network monitoring tools and intrusion detection systems (IDS) to quickly identify unusual activity or breaches in your network. Analyzing traffic patterns, unusual access attempts, or unauthorized data exfiltration are key indicators. Early detection is crucial in minimizing the impact of a breach.</p>
-                  </div>
-                </section>
-              </div>
-              <div class="col-lg-6">
-                <section id="skills" class="skills section light-background">
-                  <div class="container section-title">
-                    <h6 style="font-weight: bold;"><i class="bi bi-exclude"></i>&nbsp;&nbsp;2. Isolate Compromised Network Segments</h6>
-                    <p>Upon detecting a breach, promptly isolate the affected network segments to prevent the spread of malicious activity. This might involve disabling compromised accounts, blocking suspicious IP addresses, or temporarily shutting down vulnerable systems while the threat is contained.</p>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-      
-          <section id="services" class="services section light-background" style="margin: 25px 10px 25px 10px;">
-            <div class="container section-title">
-              <h6 style="font-weight: bold;"><i class="bi bi-tools"></i>&nbsp;&nbsp;3. Remediate Vulnerabilities</h6>
-              <p>Identify and remediate the vulnerabilities that allowed the breach to occur. This could involve applying security patches, reconfiguring firewalls, updating access controls, or implementing stricter network segmentation. Remediation should focus on closing the gaps that were exploited.</p>
-            </div>
-          </section>
-      
-          <section id="services" class="services section light-background" style="margin: 25px 10px 25px 10px;">
-            <div class="container section-title">
-              <h6 style="font-weight: bold;"><i class="bi bi-people"></i>&nbsp;&nbsp;4. Communicate with Stakeholders</h6>
-              <p>Inform relevant stakeholders, including IT staff, management, and affected parties, about the breach and your response actions. Transparency is key to maintaining trust and ensuring that everyone involved understands the situation and any potential risks or required actions.</p>
-            </div>
-          </section>
-      
-          <section id="services" class="services section light-background" style="margin: 25px 10px 25px 10px;">
-            <div class="container section-title">
-              <h6 style="font-weight: bold;"><i class="bi bi-arrow-repeat"></i>&nbsp;&nbsp;5. Recover and Restore Network Operations</h6>
-              <p>Once the threat is contained and vulnerabilities are addressed, focus on recovering affected systems and restoring normal network operations. This includes verifying that all systems are secure and fully operational before they are brought back online.</p>
-            </div>
-          </section>
-      
-          <section id="services" class="services section light-background" style="margin: 25px 10px 25px 10px;">
-            <div class="container section-title">
-              <h6 style="font-weight: bold;"><i class="bi bi-graph-up"></i>&nbsp;&nbsp;6. Review and Strengthen Network Security Posture</h6>
-              <p>Conduct a thorough post-incident review to evaluate the effectiveness of your response and to learn from the incident. Use these insights to strengthen your network security strategies, update incident response plans, and enhance overall resilience against future threats.</p>
-            </div>
-          </section>
         </section>
-      </div>
+        
+        <section id="services" class="services section light-background" style="margin: 25px 10px 25px 10px;">
+          <div class="container section-title">
+            <h6 style="font-weight: bold;"><i class="bi bi-person-x"></i>&nbsp;&nbsp;4. Cultivate a Culture of Skepticism</h6>
+            <p>Encourage employees to question unusual requests and to report suspicious activities immediately. Fostering a culture of skepticism can prevent employees from blindly following instructions that may lead to a security breach.</p>
+          </div>
+        </section>
+      </section>
+      
       
 
     <br>
